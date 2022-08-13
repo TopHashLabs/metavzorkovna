@@ -1,5 +1,5 @@
 [build.environment]
-  NODE_VERSION = "14"
+  NODE_VERSION = "14.18.1"
   NPM_FLAGS = "--prefix=/dev/null"
 [build]
   command = "npm i && npm run build"

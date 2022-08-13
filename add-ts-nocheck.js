@@ -2,7 +2,7 @@ const fs = require('fs')
 
 const ADDED_STR = '// @ts-nocheck\n\n'
 const FILES = [
-  'node_modules/.pnpm/@snapshot-labs+lock@0.1.7/node_modules/@snapshot-labs/lock/connectors/gnosis.ts'
+  'node_modules/@snapshot-labs/lock/connectors/gnosis.ts'
 ]
 
 Promise.allSettled(FILES.map(addTsNoCheck)).then((results) => {
