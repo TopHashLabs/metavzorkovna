@@ -2,7 +2,7 @@
   NODE_VERSION = "14"
   NPM_FLAGS = "--prefix=/dev/null"
 [build]
-  command = "npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run build"
+  command = "npm i && npm run build"
 [[redirects]]
   from = "/*"
   to = "/index.html"
