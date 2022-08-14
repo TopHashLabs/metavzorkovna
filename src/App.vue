@@ -13,7 +13,15 @@ const price = 0.05
           loop
           preload="metadata"
           src="./assets/video/nft.mp4"
-          class="w-[520px] mobile:h-[410px] h-[565px]"
+          class="w-full h-[410px] hidden mobile:block"
+        ></video>
+        <video
+          autoplay
+          muted
+          loop
+          preload="metadata"
+          src="./assets/video/nft.webm"
+          class="w-[520px] h-[565px] scale-[1.5] mobile:hidden block "
         ></video>
         <div >
           <div class="mobile:text-[32px] mobile:leading-[35px] text-[50px] leading-[49px] font-neus text-center max-w-[520px] relative">Metavzorkovna Membership NFT
