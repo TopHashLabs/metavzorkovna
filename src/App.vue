@@ -12,7 +12,7 @@ const price = 0.05
           muted
           loop
           preload="metadata"
-          src="./assets/video/nft.webm"
+          src="./assets/video/nft.mp4"
           class="w-[520px] mobile:h-[410px] h-[565px]"
         ></video>
         <div >
@@ -160,6 +160,6 @@ html {
 }
 .main {
   color: #fff;
-  background-color: #090909;
+  background-color: black;
 }
 </style>
