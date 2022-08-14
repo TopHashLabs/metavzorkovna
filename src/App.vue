@@ -41,27 +41,33 @@ const price = 0.05
         </p>
         <div class="grid grid-cols-3 mobile:grid-cols-1 gap-y-[50px] mobile:gap-y-[24px] gap-x-[130px] mobile:gap-x-[0] items-stretch justify-between w-full mt-[48px] mobile:mt-[30px]">
           <div class="flex mobile:flex-col mobile:text-center items-center space-x-[24px] mobile:space-x-0 mobile:space-y-3">
-            <img src="./assets/img/crown.svg" alt="">
+            <img class="mobile:hidden" src="./assets/img/crown.svg" alt="">
+            <img class="hidden mobile:block" src="./assets/img/crown.png" alt="">
             <p class="text-[18px] leading-[22px] flex flex-col">1 NFT = 1 Physical Membership Card <span class="text-[#9D9D9D]">(valid for 1 year)</span> </p>
           </div>
           <div class="flex mobile:flex-col mobile:text-center items-center space-x-[24px] mobile:space-x-0 mobile:space-y-3">
-            <img src="./assets/img/percent.svg" alt="">
+            <img class="mobile:hidden" src="./assets/img/percent.svg" alt="">
+            <img class="hidden mobile:block" src="./assets/img/percent.png" alt="">
             <p class="text-[18px] leading-[22px]">Discount 13% at the bar of Vzorkovna private club</p>
           </div>
           <div class="flex mobile:flex-col mobile:text-center items-center space-x-[24px] mobile:space-x-0 mobile:space-y-3">
-            <img src="./assets/img/vip.svg" alt="">
+            <img class="mobile:hidden" src="./assets/img/vip.svg" alt="">
+            <img class="hidden mobile:block" src="./assets/img/vip.png" alt="">
             <p class="text-[18px] leading-[22px]">Access to closed spots within the bar</p>
           </div>
           <div class="flex mobile:flex-col mobile:text-center items-center space-x-[24px] mobile:space-x-0 mobile:space-y-3">
-            <img src="./assets/img/watches.svg" alt="">
+            <img class="mobile:hidden" src="./assets/img/watches.svg" alt="">
+            <img class="hidden mobile:block" src="./assets/img/watches.png" alt="">
             <p class="text-[18px] leading-[22px]">No queue / line wait when entring the bar</p>
           </div>
           <div class="flex mobile:flex-col mobile:text-center items-center space-x-[24px] mobile:space-x-0 mobile:space-y-3">
-            <img src="./assets/img/person.svg" alt="">
+            <img class="mobile:hidden" src="./assets/img/person.svg" alt="">
+            <img class="hidden mobile:block" src="./assets/img/person.png" alt="">
             <p class="text-[18px] leading-[22px]">Bring 1 person with you</p>
           </div>
           <div class="flex mobile:flex-col mobile:text-center items-center space-x-[24px] mobile:space-x-0 mobile:space-y-3">
-            <img src="./assets/img/merch.svg" alt="">
+            <img class="mobile:hidden" src="./assets/img/merch.svg" alt="">
+            <img class="hidden mobile:block" src="./assets/img/merch.png" alt="">
             <p class="text-[18px] leading-[22px]">Exclusive merch</p>
           </div>
         </div>
