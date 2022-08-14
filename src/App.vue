@@ -12,11 +12,11 @@ const price = 0.05
           muted
           loop
           preload="metadata"
-          class="mobile:w-full mobile:h-[410px] w-[520px] h-[565px] scale-[1.5]"
+          class="mobile:hidden w-[520px] h-[565px] scale-[1.5]"
         >
         <source src="./assets/video/nft.webm" type="video/webm" />
-        <source src="./assets/video/nft.mp4" type="video/mp4" />
         </video>
+        <img class="hidden mobile:block w-full h-[410px] scale-[1.1]" src="./assets/video/nft.gif" alt="">
         <div >
           <div class="mobile:text-[32px] mobile:leading-[35px] text-[50px] leading-[49px] font-neus text-center max-w-[520px] relative">Metavzorkovna Membership NFT
             <div class="absolute right-0 -bottom-2 mobile:-bottom-3 rotate-[-7deg] rounded-full bg-[#A7D2FF] text-black font-inter uppercase text-xs px-[15px] py-[4px] mobile:text-[10px] mobile:leading-[23px] mobile:px-[10px] mobile:py-0">1 year validity</div>
