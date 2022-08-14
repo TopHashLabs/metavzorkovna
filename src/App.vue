@@ -7,8 +7,14 @@ const price = 0.05
     <div class="app-container">
       <Header/>
       <main class="flex mobile:flex-col justify-around items-center my-8 mobile:mt-0 mobile:mb-[44px]">
-        <img class="mobile:hidden block" src="../src/assets/img/card-desktop.svg" alt="">
-        <img class="hidden mobile:block" src="../src/assets/img/card-mobile.png" alt="">
+        <video
+          autoplay
+          muted
+          loop
+          preload="metadata"
+          src="./assets/video/nft.webm"
+          class="w-[520px] mobile:h-[410px] h-[565px]"
+        ></video>
         <div >
           <div class="mobile:text-[32px] mobile:leading-[35px] text-[50px] leading-[49px] font-neus text-center max-w-[520px] relative">Metavzorkovna Membership NFT
             <div class="absolute right-0 -bottom-2 mobile:-bottom-3 rotate-[-7deg] rounded-full bg-[#A7D2FF] text-black font-inter uppercase text-xs px-[15px] py-[4px] mobile:text-[10px] mobile:leading-[23px] mobile:px-[10px] mobile:py-0">1 year validity</div>
@@ -16,14 +22,14 @@ const price = 0.05
           <div class="mt-[37px] mb-[22px] flex flex-col items-center justify-center">
             <div class="flex mobile:text-[26px] text-[32px] leading-[45px] items-center font-work font-medium">
             <EthIcon class="mr-2.5" />
-            {{price}} ETH
+            TBA ETH
             </div>
             <p class="text-base text-[#565656] font-work">Mint cost</p>
           </div>
           <div class="flex flex-col space-y-[13px] font-work font-light italic items-center">
             <BaseButton class="max-w-[300px] mobile:max-w-full" color="pink" size="large" block>Mint</BaseButton>
             <p>
-              Minted 100 / 500
+              Minted 0 / 500
             </p>
           </div>
         </div>
@@ -38,7 +44,7 @@ const price = 0.05
           </div>
           <div class="flex mobile:flex-col mobile:text-center items-center space-x-[24px] mobile:space-x-0 mobile:space-y-3">
             <img src="./assets/img/percent.svg" alt="">
-            <p class="text-[18px] leading-[22px]">Discount at the bar of Vzorkovna private club</p>
+            <p class="text-[18px] leading-[22px]">Discount 13% at the bar of Vzorkovna private club</p>
           </div>
           <div class="flex mobile:flex-col mobile:text-center items-center space-x-[24px] mobile:space-x-0 mobile:space-y-3">
             <img src="./assets/img/vip.svg" alt="">
@@ -86,18 +92,18 @@ const price = 0.05
         <img src="./assets/img/concept.png" alt="">
       </section>
       <section class="mt-[200px] mobile:mt-[86px] mobile:flex mobile:flex-row-reverse mobile:justify-center mobile:gap-[22px]">
-        <div class="flex mobile:flex-col justify-between items-start">
-          <div class=" text-[45px] mobile:text-[30px] leading-[44px] mobile:leading-[38px] font-neus text-left">
+        <div class="flex mobile:flex-col gap-x-[8%] mobile:gap-x-0 justify-start items-start">
+          <div class="hidden mobile:block font-neus text-left mobile:text-[30px] mobile:leading-[38px]">
             <p>Mint</p>
             <p>progress map</p>
           </div>
-          <div class=" bg-[#212121]/60 rounded-md max-w-[332px] p-4 text-center text-base relative">
+          <div class=" bg-[#212121]/60 rounded-md max-w-[332px] p-4 text-center text-base relative mobile:mt-[14px]">
             At any sell out you are eligible for all the benefits seen above
             <div class="absolute -bottom-2 left-1/2 w-0 h-0 border-l-[8px] border-l-transparent border-t-[8px] border-t-[#212121]/60 border-r-[8px] border-r-transparent
              mobile:bottom-[40%] mobile:-left-4 mobile:border-t-[8px] mobile:border-t-transparent mobile:border-r-[8px] mobile:border-r-[#212121]/60 mobile:border-b-[8px] mobile:border-b-transparent
             "></div>
           </div>
-          <div class=" bg-[#212121]/60 rounded-md max-w-[332px] p-4 text-center text-base relative">
+          <div class=" bg-[#212121]/60 rounded-md max-w-[332px] p-4 text-center text-base relative mobile:mt-[64px]">
             At 50% + 1 sell out we will start the development of Metavzorkovna
             <div class="absolute -bottom-2 left-1/2 w-0 h-0 border-l-[8px] border-l-transparent border-t-[8px] border-t-[#212121]/60 border-r-[8px] border-r-transparent 
              mobile:bottom-[40%] mobile:-left-4 mobile:border-t-[8px] mobile:border-t-transparent mobile:border-r-[8px] mobile:border-r-[#212121]/60 mobile:border-b-[8px] mobile:border-b-transparent
@@ -105,30 +111,25 @@ const price = 0.05
           </div>
         </div>
         <div class="w-[88%] mobile:w-2.5 mobile:h-[379px] h-2.5 bg-[#212121] rounded-[26px] relative mt-[34px] mobile:mt-0">
-          <div  class="absolute rounder-[13px] z-10 bg-[#A7D2FF] rounded-[26px] left-0 h-full mobile:h-[50%] w-[57%] mobile:w-full"></div>
-          <span class="absolute mobile:top-[28%] mobile:left-8 top-8 left-[50%] text-[34px] leading-[33px] mobile:text-[28px] ombile:leading-[27px]">50%</span>
-          <span class="absolute mobile:top-[68%] mobile:left-8 top-8 right-0 text-[34px] leading-[33px] mobile:text-[28px] ombile:leading-[27px]">100%</span>
+          <div  class="absolute rounder-[13px] z-10 bg-[#A7D2FF] rounded-[26px] left-0 h-full mobile:h-[55%] w-[57%] mobile:w-full"></div>
+          <span class="absolute mobile:top-[50%] mobile:left-8 top-8 left-[50%] text-[34px] leading-[33px] mobile:text-[28px] mobile:leading-[27px]">50%</span>
+          <span class="absolute mobile:top-[90%] mobile:left-8 top-8 right-0 text-[34px] leading-[33px] mobile:text-[28px] mobile:leading-[27px]">100%</span>
         </div>
+        <div class=" mt-4 text-[45px] mobile:hidden leading-[44px]  font-neus text-left">
+            <p>Mint</p>
+            <p>progress map</p>
+          </div>
       </section>
       <section class="mt-[210px] mobile:mt-[105px] pb-[145px] mobile:pb-[125px]">
         <p class="text-[45px] mobile:text-[30px] leading-[44px] mobile:leading-[37.5px] font-neus text-center mobile:text-left">Metaverse onboarding</p>
         <p class="text-white/60 text-[18px] mobile:text-sm leading-[31px] mt-[14px] max-w-[630px] mobile:max-w-full mx-auto text-center mobile:text-left">Thanks to our partners we are having the opportunity to transition and extend our business into the metaverse and be a part of the future.</p>
-        <div class="flex mobile:flex-col justify-around items-cente mt-[60px] mobile:mt-0">
-          <div class="flex flex-col items-center space-y-[20px] w-[415px] mobile:w-full">
-              <img class="p-[70px]" src="./assets/img/vinum-logo.svg" alt="">
-              <span class="font-work text-sm italic">Provided by</span>
-              <BaseButton underline icon="external-link" block>
+          <div class="flex flex-col items-center mx-auto w-1/3 mobile:w-full mobile:mt-[112px]">
+              <img class="w-[466px] h-[292px] mobile:w-[153px] mobile:h-[115px]" src="./assets/img/vinum-logo.svg" alt="">
+              <span class="font-work text-[31px] leading-[41px mobile:text-sm font-light italic mt-[80px] mb-[32px]">Provided by</span>
+              <BaseButton href="https://www.vinum-web3.xyz/" class="scale-[1.4 mobile:scale-1" underline icon="external-link" block>
                 Vinum Web3
               </BaseButton>
           </div>
-          <div class="flex flex-col items-center space-y-[20px] w-[415px] mobile:w-full">
-              <img class="p-[44px]" src="./assets/img/somnium-logo.svg" alt="">
-              <span class="font-work text-sm italic">Provided by</span>
-              <BaseButton underline icon="external-link" block>
-                Somnium Space
-              </BaseButton>
-          </div>
-        </div>
       </section>
     </div>
   </main>

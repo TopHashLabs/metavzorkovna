@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import Footer1 from './Footer.vue';
 const props = withDefaults(
   defineProps<{
     loading?: boolean
@@ -8,7 +9,8 @@ const props = withDefaults(
     color?: string
     size?: string
     icon?: string
-    iconColor?: string 
+    iconColor?: string
+    href?: string
   }>(),
   {
     loading: false,
@@ -55,9 +57,13 @@ const btnClasses = computed(() => [
   'border leading-6 py-[13px] mobile:py-[8px] cursor-pointer font-semibold rounded-full bg-transparent rounded-full flex justify-center items-center',
   { 'cursor-not-allowed': props.disabled }
 ])
+const tagIs = computed(() => props.href ? 'a' : 'button')
 </script>
 <template>
-  <button
+  <Component
+    :is="tagIs"
+    :href="href"
+    target="_blank"
     :class="btnClasses"
   >
       <div class="flex items-center" v-if="!loading">
@@ -69,5 +75,5 @@ const btnClasses = computed(() => [
         <div style="border-top-color:transparent"
         class="w-3 h-3 border-2 border-white border-solid rounded-full animate-spin"></div>
       </div>
-  </button>
+  </Component>
 </template>
