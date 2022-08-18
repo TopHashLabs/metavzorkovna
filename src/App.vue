@@ -6,7 +6,7 @@ const price = 0.05
   <main class="main">
     <div class="app-container">
       <Header/>
-      <main class="flex mobile:flex-col justify-around items-center my-8 mobile:mt-0 mobile:mb-[44px]">
+      <main class="flex mobile:flex-col justify-around items-center my-8 mobile:-mt-12 mobile:mb-[44px]">
         <video
           autoplay
           muted
@@ -16,7 +16,7 @@ const price = 0.05
         >
         <source src="./assets/video/nft.webm" type="video/webm" />
         </video>
-        <img class="hidden mobile:block w-full h-[410px] scale-[1.1]" src="./assets/video/nft.gif" alt="">
+        <img class="hidden mobile:block scale-[0.75]" src="./assets/video/nft.gif" alt="">
         <div >
           <div class="mobile:text-[32px] mobile:leading-[35px] text-[50px] leading-[49px] font-neus text-center max-w-[520px] relative">Metavzorkovna Membership NFT
             <div class="absolute right-0 -bottom-2 mobile:-bottom-3 rotate-[-7deg] rounded-full bg-[#A7D2FF] text-black font-inter uppercase text-xs px-[15px] py-[4px] mobile:text-[10px] mobile:leading-[23px] mobile:px-[10px] mobile:py-0">1 year validity</div>
@@ -79,7 +79,7 @@ const price = 0.05
         <div class="flex mobile:flex-col mobile:space-y-[20px] justify-between items-stretch mobile:items-center mt-[48px]">
           <div class="max-w-[408.91px] flex flex-col items-center rounded-[13px] border border-[#464646]">
             <img class="rounded-t-[13px]" src="./assets/img/galery.png" alt="">
-            <p class="p-5 pt-6 pb-[42px] font-montserrat text-white/80">NFTs will allow to bid on spots where artists will are able to <span class="text-white/100 underline"> display their works in both real world and metaverse</span></p>
+            <p class="p-5 pt-6 pb-[42px] font-montserrat text-white/80">NFTs will allow to bid on spots where artists will be able to <span class="text-white/100 underline"> display their works in both real world and metaverse</span></p>
           </div>
           <div class="max-w-[408.91px] flex flex-col items-center rounded-[13px] border border-[#464646]">
             <img class="rounded-t-[13px]" src="./assets/img/club.png" alt="">
