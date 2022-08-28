@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import Footer1 from './Footer.vue';
 const props = withDefaults(
   defineProps<{
     loading?: boolean
@@ -25,11 +24,11 @@ const props = withDefaults(
 const btnBorderColor = computed(() => {
   switch (props.color) {
     case 'gray': 
-      return 'border-[#333333]'
+      return 'border border-[#333333]'
     case 'pink':
-      return 'border-[#DC5AE0]'
+      return 'border-gradient not-italic hover:bg-white hover:text-black transition-all'
     default: 
-      return 'border-[#333333]'
+      return 'border border-[#333333]'
   }
 })
 const fontSize = computed(() => {
@@ -54,7 +53,7 @@ const btnClasses = computed(() => [
   fontSize.value,
   blockWidth.value,
   textDecoration.value,
-  'border leading-6 py-[13px] mobile:py-[8px] cursor-pointer font-semibold rounded-full bg-transparent rounded-full flex justify-center items-center',
+  'leading-6 py-[13px] mobile:py-[8px] cursor-pointer font-semibold rounded-full bg-transparent rounded-full flex justify-center items-center',
   { 'cursor-not-allowed': props.disabled }
 ])
 const tagIs = computed(() => props.href ? 'a' : 'button')
@@ -77,3 +76,40 @@ const tagIs = computed(() => props.href ? 'a' : 'button')
       </div>
   </Component>
 </template>
+<style scoped>
+.border-gradient {
+  position: relative;
+}
+
+.border-gradient::before {
+  --angle: 0deg;
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50px;
+  padding: 1.5px; /* control the border thickness */
+  background: conic-gradient(from var(--angle), #DC5AE0, transparent,transparent, #DC5AE0);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  pointer-events: none;
+  animation: 5s rotate linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    --angle: 0deg;
+  }
+  100% {
+    --angle: 360deg;
+  }
+}
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+</style>
