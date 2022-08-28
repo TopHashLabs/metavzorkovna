@@ -29,9 +29,9 @@ const price = 0.05
             <p class="text-base text-[#565656] font-work">Mint cost</p>
           </div>
           <div class="flex flex-col space-y-[13px] font-work font-light italic items-center">
-            <BaseButton class="max-w-[300px] mobile:max-w-full" color="pink" size="large" block>Mint</BaseButton>
-            <p>
-              Minted 0 / 500
+            <BaseButton href="https://t.me/METAVzorkovna" class="max-w-[300px] mobile:max-w-full" color="pink" size="large" block>Join Now!</BaseButton>
+            <p class="max-w-[300px] text-center text-xs font-work leading-[22px] italic">
+              To learn more about the project, stay up to date with public sale details join our community
             </p>
           </div>
         </div>
@@ -94,8 +94,8 @@ const price = 0.05
       <section class="flex mobile:flex-col mobile:space-y-[55px] justify-between items-start mobile:items-center mt-[235px] mobile:mt-[105px]">
         <div class="max-w-[550px] mobile:max-w-full">
         <div class="mobile:text-[30px] mobile:leading-[37.5px] mobile:max-w-[280px] mobile:text-left text-[45px] leading-[44px] font-neus text-left">Metavzorkovna Concept</div>
-        <p class="text-white/60 text-[18px] leading-[31px] mt-[14px]">Moving one of the most known private clubs in Prague into the Metaverse. First step is launching an NFT collection which will serve as digital membership passes. If successful, we will start building the replica of Vzorkovna in the Metaverse.</p>
-        <BaseButton class="w-1/2 mobile:w-full mt-[33px]" icon="external-link" underline block>Vzorkovna</BaseButton>
+        <p class="text-white/60 text-[18px] font-inter font-normal leading-[31px] mt-[14px]">Moving one of <span class="font-bold">the most known and first</span> private clubs in <span class="font-bold">Prague</span> into the  <span class="font-bold">Metaverse</span>. First step is launching an NFT collection which will serve as digital membership passes. If successful, we will start building the replica of Vzorkovna in the Metaverse.</p>
+        <BaseButton href="http://vzorkovna.cz/" class="w-1/2 mobile:w-full mt-[33px]" icon="external-link" underline block>Vzorkovna</BaseButton>
         </div>
         <img src="./assets/img/concept.png" alt="">
       </section>
